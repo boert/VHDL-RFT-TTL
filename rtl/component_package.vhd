@@ -302,17 +302,18 @@ package component_package is
     end component DL374D;
 
 
-    component d172d is
-        port (
-            clk : in  std_ulogic;
-            s   : in  std_ulogic;
-            r   : in  std_ulogic;
-            j   : in  std_ulogic_vector(2 downto 0);
-            k   : in  std_ulogic_vector(2 downto 0);
-            q   : out std_ulogic;
-            q_n : out std_ulogic
-        );
-    end component d172d;
+    component D172D is
+    port 
+    (
+        clk : in  std_ulogic;
+        s   : in  std_ulogic;
+        r   : in  std_ulogic;
+        j   : in  std_ulogic_vector(2 downto 0);
+        k   : in  std_ulogic_vector(2 downto 0);
+        q   : out std_ulogic;
+        q_n : out std_ulogic
+    );
+    end component D172D;
 
 
     component ds8212d is
