@@ -18,3 +18,4 @@ DL 051 D  | 2 AND-NOR mit je 2 x 3 und 2 x 2 Eingängen         | SN74LS51N
 DL 083 D  | 4-Bit Volladdierer                                 | DM74LS83
 DL 086 D  | 4 Exklusiv-OR-Gatter mit je 2 Eingängen            | SN74LS86
 DL 090 D  | Dezimalzähler                                      | SN74LS90
+DL 093 D  | 4-Bit Binärzähler                                  | SN74LS93
