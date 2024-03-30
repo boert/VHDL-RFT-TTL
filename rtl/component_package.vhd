@@ -185,18 +185,19 @@ package component_package is
     end component DL086D;
 
 
-    component dl090d is
-        port (
-            cka   : in  std_ulogic;
-            ckb   : in  std_ulogic;
-            r01   : in  std_ulogic;
-            r02   : in  std_ulogic;
-            r91   : in  std_ulogic;
-            r92   : in  std_ulogic;
-            --
-            q     : out std_ulogic_vector(3 downto 0)
-        );
-    end component dl090d;
+    component DL090D is
+    port 
+    (
+        cka   : in  std_ulogic;
+        ckb   : in  std_ulogic;
+        r01   : in  std_ulogic;
+        r02   : in  std_ulogic;
+        r91   : in  std_ulogic;
+        r92   : in  std_ulogic;
+        --
+        q     : out std_ulogic_vector(3 downto 0)
+    );
+    end component DL090D;
 
 
     component dl093d is
