@@ -40,12 +40,13 @@ package component_package is
 
 
     -- DL 004 D      6 Inverter                                          SN74LS04 
-    component dl004d is
-        port (
-            a : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl004d;
+    component DL004D is
+    port 
+    (
+        a : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL004D;
 
 
     -- DL 008 D      4 AND mit je 2 Eingängen                            SN74LS08
