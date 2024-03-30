@@ -342,21 +342,24 @@ package component_package is
     end component DS8212D;
 
 
-    component u256 is
-        generic (
-            seed1  : positive := 1;
-            seed2  : positive := 2
-        );
-        port (
-            a      : in    std_logic_vector(6 downto 0);
-            ras_n  : in    std_logic;
-            cas_n  : in    std_logic;
-            wr_n   : in    std_logic;
-            di     : in    std_logic;
-            --
-            do     : out   std_logic
-        );
-    end component u256;
+    -- U 256 D        16 kBit~dRAM
+    component U256D is
+    generic 
+    (
+        seed1  : positive := 1;
+        seed2  : positive := 2
+    );
+    port 
+    (
+        a      : in    std_logic_vector(6 downto 0);
+        ras_n  : in    std_logic;
+        cas_n  : in    std_logic;
+        wr_n   : in    std_logic;
+        di     : in    std_logic;
+        --
+        do     : out   std_logic
+    );
+    end component U256D;
 
 
     component U2164D is
