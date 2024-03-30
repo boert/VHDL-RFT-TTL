@@ -185,6 +185,7 @@ package component_package is
     end component DL086D;
 
 
+    -- DL 090 D      Dezimalzähler                                       SN74LS90
     component DL090D is
     port 
     (
@@ -200,6 +201,7 @@ package component_package is
     end component DL090D;
 
 
+    -- DL 093 D      4-Bit Binärzähler                                   SN74LS93
     component DL093D is
     port 
     (
@@ -213,6 +215,7 @@ package component_package is
     end component DL093D;
 
 
+    -- DL 123        2 monostabile Multivibratoren                       SN74LS123
     component DL123D is
     port 
     (
@@ -222,6 +225,7 @@ package component_package is
     end component DL123D;
 
 
+    -- DL 193 D      4-Bit synchroner Vor-/Rückwärtszähler               SN74LS193
     component DL193D is
     port 
     (
@@ -238,6 +242,7 @@ package component_package is
     end component DL193D;
 
 
+    -- DL 251 D      8-auf-1 Multiplexer mit Tristate-Ausgängen          SN74LS251N
     component DL251D is
     port 
     (
@@ -252,6 +257,7 @@ package component_package is
     end component DL251D;
 
 
+    -- DL 253 D      zweifach 4-auf-1 Multiplexer mit Tristate-Ausgängen   SN74LS253N
     component DL253D is
     port 
     (
@@ -268,6 +274,7 @@ package component_package is
     end component DL253D;
 
 
+    -- DL 299 D      8 Bit Universalschieberegister
     component DL299D is
     port 
     (
@@ -290,6 +297,7 @@ package component_package is
     end component DL299D;
 
 
+    -- DL 374 D      8-D-Flip-Flop
     component DL374D is
     port 
     (
@@ -302,6 +310,7 @@ package component_package is
     end component DL374D;
 
 
+    -- D 172 D       J-K-Master-Slave-Flip-Flop                          SN7472N
     component D172D is
     port 
     (
@@ -316,19 +325,21 @@ package component_package is
     end component D172D;
 
 
-    component ds8212d is
-        port (
-            a      : in  std_logic_vector(7 downto 0);
-            s1_n   : in  std_ulogic;
-            s2     : in  std_ulogic;
-            md     : in  std_ulogic;
-            stb    : in  std_ulogic;
-            clr_n  : in  std_ulogic;
-            --     
-            y      : out std_logic_vector(7 downto 0);
-            int_n  : out std_ulogic
-        );
-    end component ds8212d;
+    -- DS 8212 D      8 Bit Bustreiber mit Speicher und Tristate-Ausgängen
+    component DS8212D is
+    port 
+    (
+        a      : in  std_logic_vector(7 downto 0);
+        s1_n   : in  std_ulogic;
+        s2     : in  std_ulogic;
+        md     : in  std_ulogic;
+        stb    : in  std_ulogic;
+        clr_n  : in  std_ulogic;
+        --     
+        y      : out std_logic_vector(7 downto 0);
+        int_n  : out std_ulogic
+    );
+    end component DS8212D;
 
 
     component u256 is
