@@ -61,14 +61,15 @@ package component_package is
 
 
     -- DL 010 D      3 NAND mit je 3 Eingängen                           SN74LS10
-    component dl010d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            c : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl010d;
+    component DL010D is
+    port
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        c : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL010D;
 
 
     -- DL 011 D      3 AND mit je 3 Eingängen                            SN74LS11
