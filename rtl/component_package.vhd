@@ -108,16 +108,18 @@ package component_package is
     end component DL038D;
 
 
-    -- DL 042 D      One-of-Ten Decoder (SN72LS42??)
-    component dl042d is
-        generic (
-            verbose : boolean
-        );
-        port (
-            a : in  std_ulogic_vector(3 downto 0);
-            q : out std_ulogic_vector(9 downto 0)
-          );
-    end component dl042d;
+    -- MH7442        BCD-zu-Dezimal Dekoder
+    component MH7442 is
+    generic 
+    (
+        verbose : boolean := true
+    );
+    port 
+    (
+        a : in  std_ulogic_vector(3 downto 0);
+        q : out std_ulogic_vector(9 downto 0)
+    );
+    end component MH7442;
 
 
     -- DL 051 D      2 AND-NOR mit je 2 x 3 und 2 x 2 Eingängen          SN74LS51N 

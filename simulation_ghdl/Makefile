@@ -1,4 +1,7 @@
-TOP = component_tb
+# select simulation target:
+#TOP = component_tb
+TOP = MH7442_tb
+
 
 simulation: ../rtl/*.vhd ../rtl_tb/*.vhd
 	ghdl -a --std=08 $^
