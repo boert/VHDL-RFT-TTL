@@ -29,13 +29,14 @@ package component_package is
 
 
     -- DL 003 D      4 NAND mit je 2 Eingängen, Kollektor offen          SN74LS03
-    component dl003d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl003d;
+    component DL003D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL003D;
 
 
     -- DL 004 D      6 Inverter                                          SN74LS04 
