@@ -18,13 +18,14 @@ package component_package is
 
 
     -- DL 002 D      4 NOR mit je 2 Eingängen                            SN74LS02
-    component dl002d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl002d;
+    component DL002D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL002D;
 
 
     -- DL 003 D      4 NAND mit je 2 Eingängen, Kollektor offen          SN74LS03
