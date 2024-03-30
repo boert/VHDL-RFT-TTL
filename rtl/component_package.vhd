@@ -362,12 +362,15 @@ package component_package is
     end component U256D;
 
 
+    -- U 2164 D       64 kBit~dRAM
     component U2164D is
-    generic (
+    generic 
+    (
         seed1  : positive := 3;
         seed2  : positive := 4
     );
-    port (
+    port 
+    (
         a      : in    std_logic_vector(7 downto 0);
         ras_n  : in    std_logic;
         cas_n  : in    std_logic;
