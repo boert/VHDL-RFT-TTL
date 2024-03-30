@@ -85,15 +85,16 @@ package component_package is
 
 
     -- DL 020 D      2 NAND mit je 4 Eingängen                           SN74LS20
-    component dl020d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            c : in  std_ulogic;
-            d : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl020d;
+    component DL020D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        c : in  std_ulogic;
+        d : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL020D;
 
 
     -- DL 038 D      4 NAND Treiber mit je 2 Eingängen, Kollektor offen  SN74LS38
