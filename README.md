@@ -23,3 +23,4 @@ DL 123 D  | 2 monostabile Multivibratoren                       | SN74LS123
 DL 193 D  | 4-Bit synchroner Vor-/Rückwärtszähler               | SN74LS193
 DL 251 D  | 8-auf-1 Multiplexer mit Tristate-Ausgängen          | SN74LS251N
 DL 253 D  | zweifach 4-auf-1 Multiplexer mit Tristate-Ausgängen | SN74LS253N
+DL 299 D  | 8 Bit Universalschieberegister
