@@ -159,16 +159,18 @@ package component_package is
     end component DL074D;
 
 
-    -- DL 083 D      4-Bit Binary Adder with Fast Carry ??                  
-    component dl083d is
-        port (
-            a  : in  std_ulogic_vector(3 downto 0);
-            b  : in  std_ulogic_vector(3 downto 0);
-            ci : in  std_ulogic;
-            q  : out std_ulogic_vector(3 downto 0);
-            co : out std_ulogic
-        );
-    end component dl083d;
+    -- DL 083 D      4-Bit Volladdierer
+    component DL083D is
+    port 
+    (
+        a  : in  std_ulogic_vector(3 downto 0);
+        b  : in  std_ulogic_vector(3 downto 0);
+        ci : in  std_ulogic;
+        --
+        q  : out std_ulogic_vector(3 downto 0);
+        co : out std_ulogic
+    );
+    end component DL083D;
 
 
     -- DL 086 D      4 Exklusiv-OR-Gatter mit je 2 Eingängen  SN74LS86
