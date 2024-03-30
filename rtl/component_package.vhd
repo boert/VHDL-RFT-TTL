@@ -98,13 +98,14 @@ package component_package is
 
 
     -- DL 038 D      4 NAND Treiber mit je 2 Eingängen, Kollektor offen  SN74LS38
-    component dl038d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl038d;
+    component DL038D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL038D;
 
 
     -- DL 042 D      One-of-Ten Decoder (SN72LS42??)
