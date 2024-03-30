@@ -213,12 +213,13 @@ package component_package is
     end component DL093D;
 
 
-    component dl123 is
-        port (
-            d : in  std_ulogic;
-            q : out std_ulogic
-        );
-    end component dl123;
+    component DL123D is
+    port 
+    (
+        d : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL123D;
 
 
     component DL193D is
