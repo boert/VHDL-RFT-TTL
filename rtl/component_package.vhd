@@ -174,13 +174,15 @@ package component_package is
 
 
     -- DL 086 D      4 Exklusiv-OR-Gatter mit je 2 Eingängen  SN74LS86
-    component dl086d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl086d;
+    component DL086D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        --
+        q : out std_ulogic
+    );
+    end component DL086D;
 
 
     component dl090d is
