@@ -424,26 +424,28 @@ package component_package is
     end component U2364D;
 
 
+    -- U 855 D        Parallele Ein-/Ausgabeeinheit für U880-Systeme
     component u855 is
-        port (
-            d      : inout std_logic_vector(7 downto 0);
-            cs_n   : in    std_logic;                     -- chip select, low active
-            cd_sel : in    std_logic;                     -- 1 = command, 0 = data
-            ba_sel : in    std_logic;                     -- 1 = port b, 0 = port a
-            a      : inout std_logic_vector(7 downto 0);
-            astb_n : in    std_logic;                     -- port a strobe, low active
-            bstb_n : in    std_logic;                     -- port b strobe, low active
-            ardy   : out   std_logic;                     -- port a ready
-            brdy   : out   std_logic;                     -- port b ready
-            ieo    : out   std_logic;                     -- interrupt enable output
-            int_n  : out   std_logic;                     -- interrupt
-            iei    : in    std_logic;                     -- interrupt enable input
-            clk    : in    std_logic;                     -- clock input
-            b      : inout std_logic_vector(7 downto 0);
-            rd_n   : in    std_logic;                     -- read
-            iorq_n : in    std_logic;                     -- io request
-            m1_n   : in    std_logic                      -- machine cycle
-        );
+    port 
+    (
+        d      : inout std_logic_vector(7 downto 0);
+        cs_n   : in    std_logic;                     -- chip select, low active
+        cd_sel : in    std_logic;                     -- 1 = command, 0 = data
+        ba_sel : in    std_logic;                     -- 1 = port b, 0 = port a
+        a      : inout std_logic_vector(7 downto 0);
+        astb_n : in    std_logic;                     -- port a strobe, low active
+        bstb_n : in    std_logic;                     -- port b strobe, low active
+        ardy   : out   std_logic;                     -- port a ready
+        brdy   : out   std_logic;                     -- port b ready
+        ieo    : out   std_logic;                     -- interrupt enable output
+        int_n  : out   std_logic;                     -- interrupt
+        iei    : in    std_logic;                     -- interrupt enable input
+        clk    : in    std_logic;                     -- clock input
+        b      : inout std_logic_vector(7 downto 0);
+        rd_n   : in    std_logic;                     -- read
+        iorq_n : in    std_logic;                     -- io request
+        m1_n   : in    std_logic                      -- machine cycle
+    );
     end component u855;
 
 

@@ -30,4 +30,5 @@ DS 8212 D | 8 Bit Bustreiber mit Speicher und Tristate-Ausgängen  | P8212
 U 256 D   | 16 kBit~dRAM
 U 2164 D  | 64 kBit~dRAM
 U 2364 D  | 8x8 kBit~ROM
-U 880 D   | 8-bit-Mikroprozessor                                  | Z80
+U 855 D   | Parallele Ein-/Ausgabeeinheit für U880-Systeme        | Z80PIO
+U 880 D   | 8-bit-Mikroprozessor                                  | Z80CPU
