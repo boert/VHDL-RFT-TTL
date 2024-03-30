@@ -73,14 +73,15 @@ package component_package is
 
 
     -- DL 011 D      3 AND mit je 3 Eingängen                            SN74LS11
-    component dl011d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            c : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl011d;
+    component DL011D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        c : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL011D;
 
 
     -- DL 020 D      2 NAND mit je 4 Eingängen                           SN74LS20
