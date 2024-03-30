@@ -238,17 +238,18 @@ package component_package is
     end component DL193D;
 
 
-    component dl251d is
-        port (
-            d    : in  std_ulogic_vector(7 downto 0);
-            --
-            s    : in  std_ulogic_vector(2 downto 0);
-            oe_n : in  std_ulogic;                      -- strobe
-            --
-            y    : out std_ulogic;
-            y_n  : out std_ulogic
-        );
-    end component dl251d;
+    component DL251D is
+    port 
+    (
+        d    : in  std_ulogic_vector(7 downto 0);
+        --
+        s    : in  std_ulogic_vector(2 downto 0);
+        oe_n : in  std_ulogic;                      -- strobe
+        --
+        y    : out std_ulogic;
+        y_n  : out std_ulogic
+    );
+    end component DL251D;
 
 
     component DL253D is
