@@ -382,26 +382,28 @@ package component_package is
     end component U2164D;
 
 
-    component u880 is
-        port (
-            d       : inout std_logic_vector(7 downto 0);
-            a       : out   std_logic_vector(15 downto 0);
-            wait_n  : in    std_logic;
-            int_n   : in    std_logic;
-            nmi_n   : in    std_logic;
-            reset_n : in    std_logic;
-            busrq_n : in    std_logic;
-            clk     : in    std_logic;
-            m1_n    : out   std_logic;
-            mreq_n  : out   std_logic;
-            iorq_n  : out   std_logic;
-            rd_n    : out   std_logic;
-            wr_n    : out   std_logic;
-            rfsh_n  : out   std_logic;
-            halt_n  : out   std_logic;
-            busak_n : out   std_logic
-        );
-    end component u880;
+    -- U 880 D        8-bit-Mikroprozessor
+    component U880D is
+    port 
+    (
+        d       : inout std_logic_vector(7 downto 0);
+        a       : out   std_logic_vector(15 downto 0);
+        wait_n  : in    std_logic;
+        int_n   : in    std_logic;
+        nmi_n   : in    std_logic;
+        reset_n : in    std_logic;
+        busrq_n : in    std_logic;
+        clk     : in    std_logic;
+        m1_n    : out   std_logic;
+        mreq_n  : out   std_logic;
+        iorq_n  : out   std_logic;
+        rd_n    : out   std_logic;
+        wr_n    : out   std_logic;
+        rfsh_n  : out   std_logic;
+        halt_n  : out   std_logic;
+        busak_n : out   std_logic
+    );
+    end component U880D;
 
 
     component u2364d is
