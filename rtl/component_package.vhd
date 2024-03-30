@@ -406,19 +406,22 @@ package component_package is
     end component U880D;
 
 
-    component u2364d is
-        generic (
-            content_file : string
-        );
-        port (
-            a     : in  std_logic_vector(12 downto 0);
-            d     : out std_logic_vector(7 downto 0);
-            oe_n  : in  std_logic;
-            ce_n  : in  std_logic;
-            cs1   : in  std_logic;
-            cs2   : in  std_logic
-        );
-    end component u2364d;
+    -- U 2364 D       8x8 kBit~ROM
+    component U2364D is
+    generic 
+    (
+        content_file : string
+    );
+    port 
+    (
+        a     : in  std_logic_vector(12 downto 0);
+        d     : out std_logic_vector(7 downto 0);
+        oe_n  : in  std_logic;
+        ce_n  : in  std_logic;
+        cs1   : in  std_logic;
+        cs2   : in  std_logic
+    );
+    end component U2364D;
 
 
     component u855 is
