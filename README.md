@@ -14,3 +14,4 @@ DL 020 D  | 2 NAND mit je 4 Eingängen                          | SN74LS20
 DL 038 D  | 4 NAND Treiber mit je 2 Eingängen, Kollektor offen | SN74LS38
 DL 074 D  | 2 positiv flanken-getriggerte D-Flip-Flop          | SN74LS74N 
 MH7442    | BCD-zu-Dezimal Dekoder
+DL 051 D  | 2 AND-NOR mit je 2 x 3 und 2 x 2 Eingängen         | SN74LS51N 
