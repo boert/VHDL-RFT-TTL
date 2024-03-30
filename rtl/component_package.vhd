@@ -50,13 +50,14 @@ package component_package is
 
 
     -- DL 008 D      4 AND mit je 2 Eingängen                            SN74LS08
-    component dl008d is
-        port (
-            a : in  std_ulogic;
-            b : in  std_ulogic;
-            q : out std_ulogic
-          );
-    end component dl008d;
+    component DL008D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL008D;
 
 
     -- DL 010 D      3 NAND mit je 3 Eingängen                           SN74LS10
