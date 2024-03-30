@@ -133,17 +133,18 @@ package component_package is
 
 
     -- DL 074 D      2 positiv flanken-getriggerte D-Flip-Flop           SN74LS74N 
-    component dl074d is
-        port (
-            s_n : in  std_ulogic;
-            clk : in  std_ulogic;
-            d   : in  std_ulogic;
-            r_n : in  std_ulogic;
-            --
-            q   : out std_ulogic;
-            q_n : out std_ulogic
-        );
-    end component dl074d;
+    component DL074D is
+    port 
+    (
+        s_n : in  std_ulogic;
+        clk : in  std_ulogic;
+        d   : in  std_ulogic;
+        r_n : in  std_ulogic;
+        --
+        q   : out std_ulogic;
+        q_n : out std_ulogic
+    );
+    end component DL074D;
 
 
     -- DL 083 D      4-Bit Binary Adder with Fast Carry ??                  
