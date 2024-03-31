@@ -426,6 +426,19 @@ package component_package is
     end component U2164D;
 
 
+    -- U 505 D       1k x 8 Bit maskenprogrammierbarer Festwertspeicher (ROM)
+    component U505D is
+    generic (
+        content_file : string
+    );
+    port (
+        a     : in  std_logic_vector(9 downto 0);
+        d     : out std_logic_vector(7 downto 0);
+        cs_n  : in  std_logic
+    );
+    end component U505D;
+
+
     -- U 880 D        8-bit-Mikroprozessor
     component U880D is
     port 
