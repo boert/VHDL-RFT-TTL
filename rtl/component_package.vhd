@@ -340,6 +340,21 @@ package component_package is
     end component D174D;
 
 
+    -- D 195 D       4 bit-links-Rechts-Schieberegister
+    component D195D is
+    port 
+    (
+        data : in  std_ulogic_vector( 3 downto 0);
+        t1   : in  std_ulogic;                      -- Takt, rechts schieben
+        t2   : in  std_ulogic;                      -- Takt, links schieben
+        mc   : in  std_ulogic;                      -- Steuereingang
+        es   : in  std_ulogic;                      -- Eingang (Rechtsschiebung)
+        --   
+        q    : out std_ulogic_vector( 3 downto 0)
+    );
+    end component D195D;
+
+
     -- DS 8212 D      8 Bit Bustreiber mit Speicher und Tristate-Ausgängen
     component DS8212D is
     port 

@@ -27,6 +27,7 @@ DL 299 D  | 8 Bit Universalschieberegister
 DL 374 D  | 8-D-Flip-Flop                                         
 D 172 D   | J-K-Master-Slave-Flip-Flop                            | SN7472N
 D 174 D   | 2 D-Flip-Flop
+D 195 D   | 4 bit-links-Rechts-Schieberegister
 DS 8212 D | 8 Bit Bustreiber mit Speicher und Tristate-Ausgängen  | P8212
 U 256 D   | 16 kBit~dRAM
 U 2164 D  | 64 kBit~dRAM
