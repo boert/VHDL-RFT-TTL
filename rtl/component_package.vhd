@@ -512,14 +512,16 @@ package component_package is
     end component U857D;
 
 
-    component v4520 is
-        port (
-            c1 : in  std_ulogic;
-            c2 : in  std_ulogic;
-            r  : in  std_ulogic;
-            o  : out std_ulogic_vector(3 downto 0)
-        );
-    end component v4520;
+    -- V 4520 D    zwei binäre 4bit Vorwärtszähler 
+    component V4520D is
+    port 
+    (
+        c1 : in  std_ulogic;
+        c2 : in  std_ulogic;
+        r  : in  std_ulogic;
+        o  : out std_ulogic_vector(3 downto 0)
+    );
+    end component V4520D;
 
 
 end package component_package;
