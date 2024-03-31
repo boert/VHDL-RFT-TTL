@@ -372,6 +372,20 @@ package component_package is
     end component DS8212D;
 
 
+    -- U 202 D       1 kbit statisches RAM 
+    component U202D is
+    port
+    (
+        a      : in    std_logic_vector(9 downto 0);
+        cs_n   : in    std_logic;
+        we_n   : in    std_logic;
+        di     : in    std_logic;
+        --
+        do     : out   std_logic
+    );
+    end component U202D;
+
+
     -- U 256 D        16 kBit~dRAM
     component U256D is
     generic 

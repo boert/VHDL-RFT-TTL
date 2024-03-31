@@ -29,6 +29,7 @@ D 172 D   | J-K-Master-Slave-Flip-Flop                            | SN7472N
 D 174 D   | 2 D-Flip-Flop
 D 195 D   | 4 bit-links-Rechts-Schieberegister
 DS 8212 D | 8 Bit Bustreiber mit Speicher und Tristate-Ausgängen  | P8212
+U 202 D   | 1 kbit statisches RAM 
 U 256 D   | 16 kBit~dRAM
 U 2164 D  | 64 kBit~dRAM
 U 2364 D  | 8x8 kBit~ROM
