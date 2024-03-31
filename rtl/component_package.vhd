@@ -439,6 +439,18 @@ package component_package is
     end component U505D;
 
 
+    -- U 74 HCT 245 DK  8 Bit Bus-Transceiver, nicht invertierend
+    component U74HCT245DK is
+    port 
+    (
+        a    : inout std_ulogic_vector(7 downto 0);
+        b    : inout std_ulogic_vector(7 downto 0);
+        dir  : in    std_ulogic;
+        oe_n : in    std_ulogic;
+    );
+    end component U74HCT245DK;
+
+
     -- U 880 D        8-bit-Mikroprozessor
     component U880D is
     port 
