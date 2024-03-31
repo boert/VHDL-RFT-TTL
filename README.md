@@ -25,6 +25,7 @@ DL 251 D        | 8-auf-1 Multiplexer mit Tristate-Ausgängen              | SN7
 DL 253 D        | zweifach 4-auf-1 Multiplexer mit Tristate-Ausgängen     | SN74LS253N
 DL 299 D        | 8 Bit Universalschieberegister                          
 DL 374 D        | 8-D-Flip-Flop                                           
+D 146 D         | BCD-zu-7-Segment-Dekoder mit offenen Kollektoren
 D 172 D         | J-K-Master-Slave-Flip-Flop                              | SN7472N
 D 174 D         | 2 D-Flip-Flop                                           
 D 195 D         | 4 bit-links-Rechts-Schieberegister                      

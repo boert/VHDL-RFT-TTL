@@ -310,6 +310,20 @@ package component_package is
     end component DL374D;
 
 
+    -- D 146 D       BCD-zu-7-Segment-Dekoder mit offenen Kollektoren
+    component D146D is
+    port 
+    (
+        a   : in  std_ulogic_vector( 3 downto 0);
+        lt  : in  std_ulogic;                       -- Lampentest
+        rbi : in  std_ulogic;                       -- low = 'aus'
+        --
+        q   : out std_logic_vector( 6 downto 0);
+        rbo : in  std_ulogic
+    );
+    end component D146D;
+
+
     -- D 172 D       J-K-Master-Slave-Flip-Flop                          SN7472N
     component D172D is
     port 
