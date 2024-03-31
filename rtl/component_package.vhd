@@ -449,6 +449,7 @@ package component_package is
     end component u855;
 
 
+    -- UA 855 D       Parallele Ein-/Ausgabeeinheit für U880-Systeme
     component UA855D is
        Port (
           -- Clock
