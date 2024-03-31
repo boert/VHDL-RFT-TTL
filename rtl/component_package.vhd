@@ -483,30 +483,33 @@ package component_package is
         );
     end component UA855D;
 
-    component u857 is
-        port (
-            clk     : in    std_logic;                     -- clock input
-            reset_n : in    std_logic;
-            d       : inout std_logic_vector(7 downto 0);
-            cs_n    : in    std_logic;                     -- chip select, low active
-            ks0     : in    std_logic;
-            ks1     : in    std_logic;
-            m1_n    : in    std_logic;                     -- machine cycle
-            iorq_n  : in    std_logic;                     -- io request
-            rd_n    : in    std_logic;                     -- read
-            iei     : in    std_logic;                     -- interrupt enable input
-            c_trg0  : in    std_logic;                     -- clock/ trigger channel 0
-            c_trg1  : in    std_logic;                     -- clock/ trigger channel 1
-            c_trg2  : in    std_logic;                     -- clock/ trigger channel 2
-            c_trg3  : in    std_logic;                     -- clock/ trigger channel 3
-            --
-            ieo     : out   std_logic;                     -- interrupt enable output
-            zc_to0  : out   std_logic;                     -- zero crossing channel 0
-            zc_to1  : out   std_logic;                     -- zero crossing channel 0
-            zc_to2  : out   std_logic;                     -- zero crossing channel 0
-            int_n   : out   std_logic                      -- interrupt
-        );
-    end component u857;
+
+    -- U 857 D        Zähler/Zeitgeber für U880-Systeme 
+    component U857D is
+    port 
+    (
+        clk     : in    std_logic;                     -- clock input
+        reset_n : in    std_logic;
+        d       : inout std_logic_vector(7 downto 0);
+        cs_n    : in    std_logic;                     -- chip select, low active
+        ks0     : in    std_logic;
+        ks1     : in    std_logic;
+        m1_n    : in    std_logic;                     -- machine cycle
+        iorq_n  : in    std_logic;                     -- io request
+        rd_n    : in    std_logic;                     -- read
+        iei     : in    std_logic;                     -- interrupt enable input
+        c_trg0  : in    std_logic;                     -- clock/ trigger channel 0
+        c_trg1  : in    std_logic;                     -- clock/ trigger channel 1
+        c_trg2  : in    std_logic;                     -- clock/ trigger channel 2
+        c_trg3  : in    std_logic;                     -- clock/ trigger channel 3
+        --
+        ieo     : out   std_logic;                     -- interrupt enable output
+        zc_to0  : out   std_logic;                     -- zero crossing channel 0
+        zc_to1  : out   std_logic;                     -- zero crossing channel 0
+        zc_to2  : out   std_logic;                     -- zero crossing channel 0
+        int_n   : out   std_logic                      -- interrupt
+    );
+    end component U857D;
 
 
     component v4520 is

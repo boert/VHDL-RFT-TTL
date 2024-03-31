@@ -32,4 +32,5 @@ U 2164 D  | 64 kBit~dRAM
 U 2364 D  | 8x8 kBit~ROM
 U 855 D   | Parallele Ein-/Ausgabeeinheit für U880-Systeme        | Z80PIO
 UA 855 D  | Parallele Ein-/Ausgabeeinheit für U880-Systeme        | Z80PIO
+U 857 D   | Zähler/Zeitgeber für U880-Systeme                     | Z80CTC 
 U 880 D   | 8-bit-Mikroprozessor                                  | Z80CPU
