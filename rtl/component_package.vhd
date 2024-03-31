@@ -325,6 +325,21 @@ package component_package is
     end component D172D;
 
 
+    -- D 174 D      2 D-Flip-Flop
+    component D174D
+    port 
+    (
+        s_n : in  std_ulogic;
+        clk : in  std_ulogic;
+        d   : in  std_ulogic;
+        r_n : in  std_ulogic;
+        --
+        q   : out std_ulogic;
+        q_n : out std_ulogic
+    );
+    end component D174D;
+
+
     -- DS 8212 D      8 Bit Bustreiber mit Speicher und Tristate-Ausgängen
     component DS8212D is
     port 
