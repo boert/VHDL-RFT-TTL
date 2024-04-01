@@ -98,7 +98,7 @@ package component_package is
 
 
     -- DL 032 D      4 OR mit je 2 Eingängen                             SN74LS32
-    component entity DL032D is
+    component DL032D is
     port 
     (
         a : in  std_ulogic;
