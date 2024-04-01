@@ -2,6 +2,8 @@
 #TOP = component_tb
 TOP = MH7442_tb
 
+TOP_low =  $(shell echo $(TOP) | tr '[:upper:]' '[:lower:]')
+
 
 simulation: ../rtl/*.vhd ../rtl_tb/*.vhd
 	ghdl -a --work=t80 --std=08 ../contrib/T80/rtl/T80_Pack.vhd  
@@ -16,7 +18,7 @@ view: wave.vcd
 
 
 clean:
-	rm -f $(TOP)
+	rm -f $(TOP_low)
 	rm -f wave.vcd
 	rm -f *.o
 	rm -f *.cf
