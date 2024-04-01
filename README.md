@@ -42,6 +42,8 @@ U 2364 D        | 8x8 kBit~ROM
 U 505 D         | 1k x 8 Bit maskenprogrammierbarer Festwertspeicher (ROM)
 U 74 HCT 245 DK | 8 Bit Bus-Transceiver, nicht invertierend
 U 6216 D        | 2048 x 8 kbit statisches RAM 
+U 6264 D        | 8192 x 8 kbit statisches RAM 
+U 62256 D       | 32768 x 8 kbit statisches RAM 
 U 855 D         | Parallele Ein-/Ausgabeeinheit für U880-Systeme          | Z80PIO
 UA 855 D        | Parallele Ein-/Ausgabeeinheit für U880-Systeme          | Z80PIO
 U 857 D         | Zähler/Zeitgeber für U880-Systeme                       | Z80CTC 
