@@ -12,7 +12,7 @@ port
     le   : in  std_ulogic;                       -- latch enable
     bl_n : in  std_ulogic;                       -- blank
     --
-    q    : out std_ulogic_vector( 6 downto 0);
+    q    : out std_ulogic_vector( 6 downto 0)
 );
 end entity V40511D;
 
@@ -49,6 +49,7 @@ begin
             when "1101" => q <= "1011110"; --  d
             when "1110" => q <= "1111001"; --  E
             when "1111" => q <= "1110001"; --  F
+            when others => q <= "UUUUUUU";
         end case;
         if bl_n = '0' then
             q   <= ( others => '0');

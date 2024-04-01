@@ -40,6 +40,7 @@ begin
             when "1101" => q <= "0100001"; --  d
             when "1110" => q <= "0000110"; --  E
             when "1111" => q <= "0111000"; --  F
+            when others => q <= "UUUUUUU";
         end case;
         if rbi = '0' then
             q   <= ( others => '1');

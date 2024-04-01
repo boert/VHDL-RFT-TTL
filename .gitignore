@@ -1,0 +1,3 @@
+simulation_ghdl/*.o
+simulation_ghdl/*.cf
+simulation_ghdl/*.vcd

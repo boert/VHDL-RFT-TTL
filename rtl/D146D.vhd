@@ -12,7 +12,7 @@ port
     rbi : in  std_ulogic;                       -- low = 'aus'
     --
     q   : out std_logic_vector( 6 downto 0);
-    rbo : in  std_ulogic
+    rbo : out std_ulogic
 );
 end entity D146D;
 
@@ -41,6 +41,7 @@ begin
             when "1101" => q <= "00Z0ZZ0"; -- 13
             when "1110" => q <= "0000ZZZ"; -- 14
             when "1111" => q <= "ZZZZZZZ"; -- 15
+            when others => q <= "UUUUUUU";
         end case;
         if rbi = '1' then
             q   <= ( others => 'Z');

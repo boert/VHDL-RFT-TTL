@@ -18,11 +18,11 @@ end entity V4520D;
 
 architecture rtl of V4520D is
 
-    signal count : unsigend( 3 downto 0);
+    signal count : unsigned( 3 downto 0);
 
 begin
     
-    process
+    process( c2, c1, r)
     begin
 
         if c2 = '1' then

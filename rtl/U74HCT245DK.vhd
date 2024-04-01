@@ -10,7 +10,7 @@ port
     a    : inout std_ulogic_vector(7 downto 0);
     b    : inout std_ulogic_vector(7 downto 0);
     dir  : in    std_ulogic;
-    oe_n : in    std_ulogic;
+    oe_n : in    std_ulogic
 );
 end entity U74HCT245DK;
 

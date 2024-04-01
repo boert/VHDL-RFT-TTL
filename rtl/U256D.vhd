@@ -8,8 +8,8 @@ use ieee.math_real.all;
 entity U256D is
 generic 
 (
-    seed1  : positive := 1;
-    seed2  : positive := 2
+    seeda  : positive := 1;
+    seedb  : positive := 2
 );
 port 
 (
@@ -59,7 +59,7 @@ architecture rtl of U256D is
     end function;
 
     --signal memory_array: memory_array_t := (others => (others => get_random_bit));
-    signal memory_array: memory_array_t := random_memory_array( seed1, seed2);
+    signal memory_array: memory_array_t := random_memory_array( seeda, seedb);
     signal row_address: unsigned(6 downto 0);
 
 begin

@@ -319,7 +319,7 @@ package component_package is
         rbi : in  std_ulogic;                       -- low = 'aus'
         --
         q   : out std_logic_vector( 6 downto 0);
-        rbo : in  std_ulogic
+        rbo : out std_ulogic
     );
     end component D146D;
 
@@ -473,7 +473,7 @@ package component_package is
         a    : inout std_ulogic_vector(7 downto 0);
         b    : inout std_ulogic_vector(7 downto 0);
         dir  : in    std_ulogic;
-        oe_n : in    std_ulogic;
+        oe_n : in    std_ulogic
     );
     end component U74HCT245DK;
 
@@ -613,7 +613,7 @@ package component_package is
     port 
     (
         a   : in  std_ulogic_vector( 3 downto 0);
-        q   : out std_ulogic_vector( 9 downto 0);
+        q   : out std_ulogic_vector( 9 downto 0)
     );
     end component V4028D;
 
@@ -627,7 +627,7 @@ package component_package is
         le   : in  std_ulogic;                       -- latch enable
         bl_n : in  std_ulogic;                       -- blank
         --
-        q    : out std_ulogic_vector( 6 downto 0);
+        q    : out std_ulogic_vector( 6 downto 0)
     );
     end component V40511D;
 
