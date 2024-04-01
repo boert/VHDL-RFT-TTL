@@ -476,7 +476,7 @@ package component_package is
         w_n    : in    std_logic;
         dq     : inout std_logic_vector( 7 downto 0)
     );
-    end component U202D;
+    end component U6216D;
 
 
     -- U 74 HCT 245 DK  8 Bit Bus-Transceiver, nicht invertierend

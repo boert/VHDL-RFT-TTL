@@ -24,7 +24,7 @@ architecture simulation of U6216D is
 
     type memory_array_t is array(0 to 2047) of std_logic_vector( 7 downto 0);
 
-    signal memory_array: memory_array_t := (( others => '0') => '0);
+    signal memory_array: memory_array_t := ( others => ( others => '0'));
     signal address : integer range 0 to 2047;
     signal do      : std_logic_vector( 7 downto 0);
     
