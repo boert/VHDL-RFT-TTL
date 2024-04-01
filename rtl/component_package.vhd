@@ -471,9 +471,10 @@ package component_package is
     port
     (
         a      : in    std_logic_vector( 10 downto 0);
-        e_n    : in    std_logic;
-        g_n    : in    std_logic;
-        w_n    : in    std_logic;
+        ce1_n  : in    std_logic;
+        ce2    : in    std_logic;
+        oe_n   : in    std_logic;
+        we_n   : in    std_logic;
         dq     : inout std_logic_vector( 7 downto 0)
     );
     end component U6216D;
