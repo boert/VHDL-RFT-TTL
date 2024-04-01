@@ -21,7 +21,7 @@ architecture rtl of D146D is
 
 begin
 
-    process( a)
+    process( a, lt, rbi)
     begin
         rbo <= '1';
         case a is
