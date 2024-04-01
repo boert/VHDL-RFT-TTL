@@ -97,6 +97,17 @@ package component_package is
     end component DL020D;
 
 
+    -- DL 032 D      4 OR mit je 2 Eingängen                             SN74LS32
+    component entity DL032D is
+    port 
+    (
+        a : in  std_ulogic;
+        b : in  std_ulogic;
+        q : out std_ulogic
+    );
+    end component DL032D;
+
+
     -- DL 038 D      4 NAND Treiber mit je 2 Eingängen, Kollektor offen  SN74LS38
     component DL038D is
     port 
