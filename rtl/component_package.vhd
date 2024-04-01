@@ -605,6 +605,20 @@ package component_package is
     end component V4028D;
 
 
+    -- V 40511 D     Siebensegment-Dekoder mit Hexadezimalausgabe und Eingangslatch
+    component V40511D is
+    port 
+    (
+        a    : in  std_ulogic_vector( 3 downto 0);
+        lt_n : in  std_ulogic;                       -- Lampentest
+        le   : in  std_ulogic;                       -- latch enable
+        bl_n : in  std_ulogic;                       -- blank
+        --
+        q    : out std_ulogic_vector( 6 downto 0);
+    );
+    end component V40511D;
+
+
     -- V 4520 D    zwei binäre 4bit Vorwärtszähler 
     component V4520D is
     port 
