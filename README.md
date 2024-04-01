@@ -40,4 +40,5 @@ U 855 D         | Parallele Ein-/Ausgabeeinheit für U880-Systeme          | Z80
 UA 855 D        | Parallele Ein-/Ausgabeeinheit für U880-Systeme          | Z80PIO
 U 857 D         | Zähler/Zeitgeber für U880-Systeme                       | Z80CTC 
 U 880 D         | 8-bit-Mikroprozessor                                    | Z80CPU
+V 4028 D        | BCD-zu-1-aus-10-Dekoder 
 V 4520 D        | zwei binäre 4bit Vorwärtszähler                         | 4520 

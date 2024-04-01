@@ -508,7 +508,7 @@ package component_package is
 
 
     -- U 855 D        Parallele Ein-/Ausgabeeinheit für U880-Systeme
-    component u855 is
+    component U855 is
     port 
     (
         d      : inout std_logic_vector(7 downto 0);
@@ -529,7 +529,7 @@ package component_package is
         iorq_n : in    std_logic;                     -- io request
         m1_n   : in    std_logic                      -- machine cycle
     );
-    end component u855;
+    end component U855;
 
 
     -- UA 855 D       Parallele Ein-/Ausgabeeinheit für U880-Systeme
@@ -593,6 +593,16 @@ package component_package is
         int_n   : out   std_logic                      -- interrupt
     );
     end component U857D;
+
+
+    -- V 4028 D      BCD-zu-1-aus-10-Dekoder 
+    component V4028D is
+    port 
+    (
+        a   : in  std_ulogic_vector( 3 downto 0);
+        q   : out std_ulogic_vector( 9 downto 0);
+    );
+    end component V4028D;
 
 
     -- V 4520 D    zwei binäre 4bit Vorwärtszähler 
