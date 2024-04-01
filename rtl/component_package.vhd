@@ -466,6 +466,19 @@ package component_package is
     end component U505D;
 
 
+    -- U 6216 D      2048 x 8 kbit statisches RAM 
+    component U6216D is
+    port
+    (
+        a      : in    std_logic_vector( 10 downto 0);
+        e_n    : in    std_logic;
+        g_n    : in    std_logic;
+        w_n    : in    std_logic;
+        dq     : inout std_logic_vector( 7 downto 0)
+    );
+    end component U202D;
+
+
     -- U 74 HCT 245 DK  8 Bit Bus-Transceiver, nicht invertierend
     component U74HCT245DK is
     port 
