@@ -1,5 +1,9 @@
 # VHDL-RFT-TTL
 VHDL-Beschreibung für TTL-Schaltkreise aus Ostdeutschland zur Verwwwendung in Simulationen oder FPGA-Nachbauten.
+
+Übersicht und Datenblätter zu DDR-Schaltkreisen:
+https://www-user.tu-chemnitz.de/~heha/basteln/Konsumg%C3%BCter/DDR-Halbleiter/
+
                                                                     
 Bauteil         | Beschreibung                                            | int. Typ
 -------         | ------------                                            | --------
@@ -29,6 +33,7 @@ D 146 D         | BCD-zu-7-Segment-Dekoder mit offenen Kollektoren
 D 172 D         | J-K-Master-Slave-Flip-Flop                              | SN7472N
 D 174 D         | 2 D-Flip-Flop                                           
 D 195 D         | 4 bit-links-Rechts-Schieberegister                      
+D 345 D         | Siebensegment-Dekoder mit festen Konstantstromsenken und Hexadezimalanzeige
 DS 8212 D       | 8 Bit Bustreiber mit Speicher und Tristate-Ausgängen    | P8212
 U 202 D         | 1 kbit statisches RAM 
 U 256 D         | 16 kBit~dRAM

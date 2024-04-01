@@ -369,6 +369,19 @@ package component_package is
     end component D195D;
 
 
+    -- D 345 D       Siebensegment-Dekoder mit festen Konstantstromsenken und Hexadezimalanzeige
+    component D345D is
+    port 
+    (
+        a   : in  std_ulogic_vector( 3 downto 0);
+        rbi : in  std_ulogic;                       -- low = 'aus'
+        --
+        q   : out std_logic_vector( 6 downto 0);
+        rbo : out std_ulogic
+    );
+    end component D345D;
+
+
     -- DS 8212 D      8 Bit Bustreiber mit Speicher und Tristate-Ausgängen
     component DS8212D is
     port 
