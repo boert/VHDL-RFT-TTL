@@ -29,7 +29,8 @@ architecture simulation of U62256D is
     
 begin
 
-    address <= to_integer( unsigned( to_x01( a)));
+    --address <= to_integer( unsigned( to_x01( a)));
+    address <= to_integer( unsigned( to_01( a)));
     
     process( ce_n, oe_n, we_n, dq, address)
     begin
