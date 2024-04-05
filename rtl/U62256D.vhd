@@ -43,6 +43,6 @@ begin
         end if;
     end process;
 
-    dq <= do when ce_n = '0' and oe_n = '0' and we_n = '1'; 
+    dq <= do when ce_n = '0' and oe_n = '0' and we_n = '1' else ( others => 'Z'); 
 
 end architecture simulation;

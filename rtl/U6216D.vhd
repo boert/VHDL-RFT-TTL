@@ -30,7 +30,8 @@ architecture simulation of U6216D is
     
 begin
 
-    address <= to_integer( unsigned( to_x01( a)));
+    --address <= to_integer( unsigned( to_x01( a)));
+    address <= to_integer( unsigned( to_01( a)));
     
     process( ce1_n, ce2, oe_n, we_n, dq, address)
     begin
@@ -43,6 +44,6 @@ begin
         end if;
     end process;
 
-    dq <= do when ce1_n = '0' and ce2 = '1' and oe_n = '0' and we_n = '1'; 
+    dq <= do when ce1_n = '0' and ce2 = '1' and oe_n = '0' and we_n = '1' else ( others => 'Z'); 
 
 end architecture simulation;
