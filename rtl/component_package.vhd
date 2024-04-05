@@ -385,10 +385,10 @@ package component_package is
     port 
     (
         a   : in  std_ulogic_vector( 3 downto 0);
-        rbi : in  std_ulogic;                       -- low = 'aus'
+        rbi : in  std_ulogic;                       -- low = aus, wenn a = '0000' (Vornullenunterdrückung)
+        bi  : in  std_ulogic;                       -- low = aus, (Blanking)
         --
-        q   : out std_logic_vector( 6 downto 0);
-        rbo : out std_ulogic
+        q   : out std_logic_vector( 6 downto 0)
     );
     end component D345D;
 

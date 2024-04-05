@@ -1,6 +1,7 @@
 # select simulation target:
 #TOP = component_tb
-TOP = MH7442_tb
+#TOP = MH7442_tb
+TOP = D345D_tb
 
 TOP_low =  $(shell echo $(TOP) | tr '[:upper:]' '[:lower:]')
 

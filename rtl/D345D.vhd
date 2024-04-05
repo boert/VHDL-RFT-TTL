@@ -8,10 +8,10 @@ entity D345D is
 port 
 (
     a   : in  std_ulogic_vector( 3 downto 0);
-    rbi : in  std_ulogic;                       -- low = 'aus'
+    rbi : in  std_ulogic;                       -- low = aus, wenn a = '0000' (Vornullenunterdrückung)
+    bi  : in  std_ulogic;                       -- low = aus, (Blanking)
     --
-    q   : out std_logic_vector( 6 downto 0);
-    rbo : out std_ulogic
+    q   : out std_logic_vector( 6 downto 0)
 );
 end entity D345D;
 
@@ -20,9 +20,8 @@ architecture rtl of D345D is
 
 begin
 
-    process( a, rbi)
+    process( a, rbi, bi)
     begin
-        rbo <= '1';
         case a is
             when "0000" => q <= "1000000"; --  0
             when "0001" => q <= "1111001"; --  1
@@ -42,9 +41,11 @@ begin
             when "1111" => q <= "0111000"; --  F
             when others => q <= "UUUUUUU";
         end case;
-        if rbi = '0' then
+        if rbi = '0' and a = "0000" then
             q   <= ( others => '1');
-            rbo <= '0';
+        end if;
+        if bi = '0' then
+            q   <= ( others => '1');
         end if;
     end process;
 
