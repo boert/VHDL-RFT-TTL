@@ -4,7 +4,7 @@ VHDL-Beschreibung für TTL-Schaltkreise aus Ostdeutschland zur Verwwwendung in S
 Übersicht und Datenblätter zu DDR-Schaltkreisen:
 https://www-user.tu-chemnitz.de/~heha/basteln/Konsumg%C3%BCter/DDR-Halbleiter/
 
-                                                                    
+
 Bauteil         | Beschreibung                                            | int. Typ
 -------         | ------------                                            | --------
 DL 000 D        | 4 NAND mit je 2 Eingängen                               | SN74LS00
@@ -25,6 +25,7 @@ DL 086 D        | 4 Exklusiv-OR-Gatter mit je 2 Eingängen                 | SN7
 DL 090 D        | Dezimalzähler                                           | SN74LS90
 DL 093 D        | 4-Bit Binärzähler                                       | SN74LS93
 DL 123 D        | 2 monostabile Multivibratoren                           | SN74LS123
+DL 175 D        | 4 D-Latches                                             | SN74LS175
 DL 193 D        | 4-Bit synchroner Vor-/Rückwärtszähler                   | SN74LS193
 DL 251 D        | 8-auf-1 Multiplexer mit Tristate-Ausgängen              | SN74LS251N
 DL 253 D        | zweifach 4-auf-1 Multiplexer mit Tristate-Ausgängen     | SN74LS253N
@@ -35,6 +36,7 @@ D 172 D         | J-K-Master-Slave-Flip-Flop                              | SN74
 D 174 D         | 2 D-Flip-Flop                                           
 D 195 D         | 4 bit-links-Rechts-Schieberegister                      
 D 345 D         | Siebensegment-Dekoder mit festen Konstantstromsenken und Hexadezimalanzeige
+DS 8205 D       | 1 aus 8 Dekoder                                         | P8205
 DS 8212 D       | 8 Bit Bustreiber mit Speicher und Tristate-Ausgängen    | P8212
 U 202 D         | 1 kbit statisches RAM 
 U 256 D         | 16 kBit~dRAM
