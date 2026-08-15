@@ -19,7 +19,7 @@ begin
 
     process( a)
     begin
-        case a is
+        case to_x01( a) is
             when "0000" => q <= "0000000001";
             when "0001" => q <= "0000000010";
             when "0010" => q <= "0000000100";

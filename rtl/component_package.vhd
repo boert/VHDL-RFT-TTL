@@ -236,6 +236,20 @@ package component_package is
     end component DL123D;
 
 
+    -- DL 175 D      4 D-Latches                                 SN74LS175
+    component DL175D is
+    port
+    (
+        di   : in  std_ulogic_vector( 3 downto 0);
+        clk  : in  std_ulogic;
+        r_n  : in  std_ulogic;
+        --
+        do   : out std_ulogic_vector( 3 downto 0);
+        do_n : out std_ulogic_vector( 3 downto 0)
+    );
+    end component DL175D;
+
+
     -- DL 193 D      4-Bit synchroner Vor-/Rückwärtszähler               SN74LS193
     component DL193D is
     port 
@@ -391,6 +405,23 @@ package component_package is
         q   : out std_logic_vector( 6 downto 0)
     );
     end component D345D;
+
+
+    -- DS 8205 D      1 aus 8 Dekoder
+    component DS8205D is
+    port
+    (
+        a0      : in  std_ulogic;
+        a1      : in  std_ulogic;
+        a2      : in  std_ulogic;
+        --
+        e1_n    : in  std_ulogic;
+        e2_n    : in  std_ulogic;
+        e3      : in  std_ulogic;
+        --
+        y_n     : out std_ulogic_vector( 7 downto 0)
+    );
+    end component DS8205D;
 
 
     -- DS 8212 D      8 Bit Bustreiber mit Speicher und Tristate-Ausgängen
